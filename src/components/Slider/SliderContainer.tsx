@@ -7,16 +7,15 @@ import { sliderData } from "../../data/sliderData";
 import { Slide } from "./Slide/Slide";
 import styled from "styled-components";
 import { Button } from "../Button/Button";
-
+import "./SliderContainer.css";
 const SliderContainerStyles = styled.section`
   width: 100%;
   padding: 1rem;
   margin-top: 100px;
   overflow-x: hidden;
-  z-index: 990;
   h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     color: hsl(233, 12%, 13%);
   }
 `;
@@ -25,7 +24,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 70px 0;
 `;
 export const SliderContainer: React.FC = () => {
   const settings = {

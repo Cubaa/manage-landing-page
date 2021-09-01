@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { BottomBanner } from "./components/BottomBanner/BottomBanner";
 import { DifferentAboutManageSection } from "./components/DifferentAboutManageSection/DifferentAboutManageSection";
 import { Intro } from "./components/Intro/Intro";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -21,6 +22,7 @@ function App() {
       <Intro navHeight={navHeight} />
       <DifferentAboutManageSection />
       <SliderContainer />
+      <BottomBanner />
     </div>
   );
 }

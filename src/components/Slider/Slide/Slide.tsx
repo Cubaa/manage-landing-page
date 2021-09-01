@@ -11,7 +11,6 @@ const SingleSlide = styled.div`
   padding: 0.7rem 0.8rem;
   min-height: 250px;
   border-radius: 8px;
-  z-index: 995;
 `;
 const SlideImage = styled.div`
   position: absolute;
@@ -21,8 +20,6 @@ const SlideImage = styled.div`
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  z-index: 999;
-  border: 1px solid black;
   img {
     width: 100%;
     height: auto;
@@ -35,7 +32,7 @@ const SlideInfo = styled.div`
   align-items: center;
   span {
     display: inline-block;
-    margin: 20px 0;
+    margin: 0 0 10px 0;
     font-weight: 700;
     font-size: 15px;
   }
