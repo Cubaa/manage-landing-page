@@ -11,7 +11,7 @@ const IntroSection = styled.section<IIntro>`
   width: 100%;
   min-height: 100vh;
   padding: 0 5rem;
-  padding-top: ${(props) => props.navHeight}px;
+  /* padding-top: ${(props) => props.navHeight}px; */
   display: flex;
   background-position: center;
   background-size: contain;

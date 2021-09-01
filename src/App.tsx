@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { DifferentAboutManageSection } from "./components/DifferentAboutManageSection/DifferentAboutManageSection";
 import { Intro } from "./components/Intro/Intro";
 import { Navbar } from "./components/Navbar/Navbar";
+import { SliderContainer } from "./components/Slider/SliderContainer";
 import { GlobalStyle } from "./GlobalStyles/GlobalStyles";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Navbar nav={nav} />
       <Intro navHeight={navHeight} />
       <DifferentAboutManageSection />
+      <SliderContainer />
     </div>
   );
 }

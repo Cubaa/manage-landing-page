@@ -5,12 +5,12 @@ import { Button } from "../Button/Button";
 
 const Nav = styled.nav`
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   align-items: center;
   padding: 2rem 7rem 2rem 5rem;
   justify-content: space-between;
-  z-index: 999;
+  /* z-index: 999; */
   background-color: #fff;
 `;
 
