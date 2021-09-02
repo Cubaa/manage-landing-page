@@ -7,6 +7,11 @@ const IntroInfo = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 880px) {
+    width: 100%;
+
+    justify-content: center;
+  }
 `;
 
 const Info = styled.div`
@@ -24,8 +29,26 @@ const Info = styled.div`
     margin: 25px 0;
     font-size: max(1rem, 1.5vw);
   }
+  @media (max-width: 880px) {
+    max-width: 100%;
+    h1 {
+      max-width: 100%;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
 `;
 
+const ButtonWrapper = styled.div`
+  @media (max-width: 880px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+`;
 export const IntroSectionInfo: React.FC = () => {
   return (
     <IntroInfo>
@@ -35,7 +58,9 @@ export const IntroSectionInfo: React.FC = () => {
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view
         </p>
-        <Button size="small">Get Started</Button>
+        <ButtonWrapper>
+          <Button size="small">Get Started</Button>
+        </ButtonWrapper>
       </Info>
     </IntroInfo>
   );

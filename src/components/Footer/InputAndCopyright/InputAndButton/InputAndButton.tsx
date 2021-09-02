@@ -11,6 +11,7 @@ const InputAndButtonContainer = styled.div`
   display: flex;
   align-items: stretch;
   input {
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 20px;

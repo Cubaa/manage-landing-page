@@ -17,6 +17,11 @@ const IntroSection = styled.section<IIntro>`
   background-size: contain;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 880px) {
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+  }
 `;
 
 export const Intro: React.FC<IIntro> = (props) => {

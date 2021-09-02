@@ -8,5 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Be Vietnam', sans-serif;
 }
+body{
+    position: relative;
+}
 
 `;

@@ -7,6 +7,10 @@ const FooterLinksWrapper = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   width: 50%;
+  @media (max-width: 845px) {
+    width: 100%;
+    margin: 40px 0;
+  }
 `;
 
 const LinksContainer = styled.div`
@@ -28,6 +32,8 @@ const LinksWrapper = styled.div`
       color: hsl(12, 88%, 59%);
     }
   }
+  @media (max-width: 845px) {
+  }
 `;
 
 export const FooterLinks: React.FC = () => {
@@ -35,9 +41,9 @@ export const FooterLinks: React.FC = () => {
     <>
       <FooterLinksWrapper>
         <LinksContainer>
-          {footerLinks.map((link) => {
+          {footerLinks.map((link, index) => {
             return (
-              <LinksWrapper>
+              <LinksWrapper key={index}>
                 <a href="#">{link.name}</a>
               </LinksWrapper>
             );

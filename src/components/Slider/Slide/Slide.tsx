@@ -11,6 +11,7 @@ const SingleSlide = styled.div`
   padding: 0.7rem 0.8rem;
   min-height: 250px;
   border-radius: 8px;
+  cursor: pointer;
 `;
 const SlideImage = styled.div`
   position: absolute;
@@ -37,9 +38,10 @@ const SlideInfo = styled.div`
     font-size: 15px;
   }
   p {
-    font-size: 14px;
+    font-size: clamp(14px, 1vw, 14px);
     text-align: center;
     color: hsl(227, 12%, 61%);
+    height: 100px;
   }
 `;
 

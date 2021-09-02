@@ -13,6 +13,15 @@ const Illustration = styled.div`
     height: auto;
     object-fit: contain;
   }
+  @media (max-width: 880px) {
+    width: 100%;
+    img {
+      max-width: 100%;
+      min-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 `;
 
 export const IntroSectionIllustration: React.FC = () => {

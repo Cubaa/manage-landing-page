@@ -12,6 +12,9 @@ const Nav = styled.nav`
   justify-content: space-between;
   /* z-index: 999; */
   background-color: #fff;
+  @media (max-width: 880px) {
+    padding: 2rem 2rem;
+  }
 `;
 
 const NavLogo = styled.div`
@@ -24,6 +27,9 @@ const NavLogo = styled.div`
 const NavMenu = styled.ul`
   display: flex;
   list-style: none;
+  @media (max-width: 880px) {
+    display: none;
+  }
 `;
 const NavMenuLink = styled.a`
   font-weight: 700;
@@ -44,16 +50,29 @@ const NavButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 880px) {
+    display: none;
+  }
+`;
+
+const HamburgerMenu = styled.div`
+  display: none;
+  @media (max-width: 880px) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 `;
 
 interface INav {
   nav: any;
+  hamburgerMenuHandle: () => void;
 }
 
-export const Navbar: React.FC<INav> = (props) => {
+export const Navbar: React.FC<INav> = ({ nav, hamburgerMenuHandle }) => {
   return (
     <>
-      <Nav ref={props.nav}>
+      <Nav ref={nav}>
         <NavLogo>
           <img src="../images/logo.svg" alt="logo" />
         </NavLogo>
@@ -69,6 +88,13 @@ export const Navbar: React.FC<INav> = (props) => {
         <NavButton>
           <Button size="big">Get Started</Button>
         </NavButton>
+        <HamburgerMenu>
+          <img
+            src="../images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            onClick={hamburgerMenuHandle}
+          />
+        </HamburgerMenu>
       </Nav>
     </>
   );

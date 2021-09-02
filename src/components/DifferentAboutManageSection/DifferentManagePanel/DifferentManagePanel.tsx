@@ -8,6 +8,11 @@ const ManagePanel = styled.div`
   flex-direction: column;
   padding-top: 4rem;
   padding-right: 5rem;
+  @media (max-width: 835px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+  }
 `;
 
 export const DifferentManagePanel: React.FC = () => {

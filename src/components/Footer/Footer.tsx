@@ -8,6 +8,9 @@ const FooterWrapper = styled.div`
   display: flex;
   padding: 2.5rem 2rem;
   background-color: hsl(233, 12%, 13%);
+  @media (max-width: 845px) {
+    flex-direction: column;
+  }
 `;
 
 export const Footer: React.FC = () => {

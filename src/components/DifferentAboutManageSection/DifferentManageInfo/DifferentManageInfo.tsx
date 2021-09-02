@@ -3,9 +3,14 @@ import styled from "styled-components";
 
 const ManageInfo = styled.div`
   display: flex;
-  padding: 4rem 5rem;
+  padding: 4rem 2rem;
   width: 50%;
   align-items: flex-start;
+  @media (max-width: 835px) {
+    width: 100%;
+    justify-content: center;
+    padding: 4rem 0rem 2rem 0rem;
+  }
 `;
 
 const Info = styled.div`
@@ -16,12 +21,25 @@ const Info = styled.div`
   h2 {
     margin-bottom: 20px;
     color: hsl(228, 39%, 23%);
-    font-size: clamp(0.5rem, 3vw, 2.4rem);
+    font-size: clamp(2rem, 2vw, 2.4rem);
   }
   p {
     max-width: 350px;
     color: hsl(227, 12%, 61%);
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1rem);
+  }
+  @media (max-width: 835px) {
+    width: 100%;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+    }
+    p {
+      max-width: 80%;
+      text-align: center;
+    }
   }
 `;
 

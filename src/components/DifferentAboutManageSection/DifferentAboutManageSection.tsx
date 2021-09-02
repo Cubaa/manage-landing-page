@@ -5,6 +5,10 @@ import { DifferentManagePanel } from "./DifferentManagePanel/DifferentManagePane
 
 const DifferentAboutManage = styled.section`
   display: flex;
+  @media (max-width: 835px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const DifferentAboutManageSection: React.FC = () => {

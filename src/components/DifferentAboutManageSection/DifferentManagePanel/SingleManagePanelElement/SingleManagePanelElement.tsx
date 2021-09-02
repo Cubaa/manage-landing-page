@@ -4,6 +4,9 @@ import styled from "styled-components";
 const SingleManageElementWrapper = styled.div`
   display: flex;
   margin-bottom: 25px;
+  @media (max-width: 835px) {
+    width: 100%;
+  }
 `;
 
 const SingleElementNumber = styled.div`
