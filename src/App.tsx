@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { BottomBanner } from "./components/BottomBanner/BottomBanner";
 import { DifferentAboutManageSection } from "./components/DifferentAboutManageSection/DifferentAboutManageSection";
+import { Footer } from "./components/Footer/Footer";
 import { Intro } from "./components/Intro/Intro";
 import { Navbar } from "./components/Navbar/Navbar";
 import { SliderContainer } from "./components/Slider/SliderContainer";
@@ -23,6 +24,7 @@ function App() {
       <DifferentAboutManageSection />
       <SliderContainer />
       <BottomBanner />
+      <Footer />
     </div>
   );
 }
