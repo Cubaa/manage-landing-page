@@ -23,6 +23,10 @@ const LinksWrapper = styled.div`
     text-decoration: none;
     font-size: 12px;
     color: #fff;
+    transition: 0.1s linear;
+    &:hover {
+      color: hsl(12, 88%, 59%);
+    }
   }
 `;
 

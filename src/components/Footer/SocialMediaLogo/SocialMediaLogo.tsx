@@ -29,6 +29,10 @@ const SocialMediaLinks = styled.div`
   margin-top: 60px;
   svg {
     margin-right: 15px;
+    transition: 0.1s linear;
+    &:hover {
+      fill: hsl(12, 88%, 59%);
+    }
   }
 `;
 export const SocialMediaLogo: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FooterLinks } from "./FooterLinks/FooterLinks";
-import { InputAndCopyright } from "./InputAndCopyright/InputAndcopyright";
+import { InputAndCopyright } from "./InputAndCopyright/InputAndCopyright";
 import { SocialMediaLogo } from "./SocialMediaLogo/SocialMediaLogo";
 
 const FooterWrapper = styled.div`
