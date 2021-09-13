@@ -1,4 +1,4 @@
-In progress...
+In progress... (React, TypeScript, Styled Components)
 
 # Getting Started with Create React App
 
