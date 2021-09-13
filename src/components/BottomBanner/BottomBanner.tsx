@@ -42,7 +42,7 @@ const ButtonWrapper = styled.div`
 export const BottomBanner = () => {
   return (
     <>
-      <BottomBannerWrapper>
+      <BottomBannerWrapper id="section4">
         <BannerInfo>
           <h1>Simplify how your team works today</h1>
         </BannerInfo>

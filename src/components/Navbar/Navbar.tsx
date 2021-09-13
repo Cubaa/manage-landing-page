@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import { navMenuLinks } from "../../data/navMenuLinksData";
 import { Button } from "../Button/Button";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = styled.nav`
   width: 100%;
@@ -14,6 +15,8 @@ const Nav = styled.nav`
   background-color: #fff;
   @media (max-width: 880px) {
     padding: 2rem 2rem;
+    position: fixed;
+    z-index: 999;
   }
 `;
 
@@ -31,7 +34,7 @@ const NavMenu = styled.ul`
     display: none;
   }
 `;
-const NavMenuLink = styled.a`
+const NavMenuLink = styled(Link)`
   font-weight: 700;
   cursor: pointer;
   transition: 0.1s linear;
@@ -80,7 +83,14 @@ export const Navbar: React.FC<INav> = ({ nav, hamburgerMenuHandle }) => {
           {navMenuLinks.map((link, index: number) => {
             return (
               <NavMenuList key={index}>
-                <NavMenuLink>{link.name}</NavMenuLink>
+                <NavMenuLink
+                  to={"section" + ++index}
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
+                >
+                  {link.name}
+                </NavMenuLink>
               </NavMenuList>
             );
           })}

@@ -15,6 +15,7 @@ const MobileMenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1000;
   @media (min-width: 881px) {
     display: none;
   }
@@ -42,9 +43,13 @@ const MenuList = styled.li`
 
 interface IMobileMenu {
   hamburgerMenuHandle: () => void;
+  closeMobileMenu: () => void;
 }
 
-export const MobileMenu: React.FC<IMobileMenu> = ({ hamburgerMenuHandle }) => {
+export const MobileMenu: React.FC<IMobileMenu> = ({
+  hamburgerMenuHandle,
+  closeMobileMenu,
+}) => {
   return (
     <>
       <MobileMenuWrapper>
@@ -54,7 +59,11 @@ export const MobileMenu: React.FC<IMobileMenu> = ({ hamburgerMenuHandle }) => {
             {navMenuLinks.map((link, index) => {
               return (
                 <MenuList key={index}>
-                  <MenuLink name={link.name} />{" "}
+                  <MenuLink
+                    name={link.name}
+                    index={index}
+                    closeMobileMenu={closeMobileMenu}
+                  />{" "}
                 </MenuList>
               );
             })}

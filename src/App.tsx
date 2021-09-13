@@ -31,9 +31,14 @@ function App() {
     window.addEventListener("resize", windowWidthHandler);
   });
   console.log(isMobileMenu);
+
   const hamburgerMenuHandle = () => {
     setIsMobileMenu(!isMobileMenu);
     console.log(isMobileMenu);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenu(false);
   };
 
   return (
@@ -46,7 +51,10 @@ function App() {
       <BottomBanner />
       <Footer />
       {isMobileMenu ? (
-        <MobileMenu hamburgerMenuHandle={hamburgerMenuHandle} />
+        <MobileMenu
+          hamburgerMenuHandle={hamburgerMenuHandle}
+          closeMobileMenu={closeMobileMenu}
+        />
       ) : null}
       {/* <BackgroundLayout /> */}
     </div>

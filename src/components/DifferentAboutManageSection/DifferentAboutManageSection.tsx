@@ -14,7 +14,7 @@ const DifferentAboutManage = styled.section`
 export const DifferentAboutManageSection: React.FC = () => {
   return (
     <>
-      <DifferentAboutManage>
+      <DifferentAboutManage id="section2">
         <DifferentManageInfo />
         <DifferentManagePanel />
       </DifferentAboutManage>

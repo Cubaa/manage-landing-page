@@ -63,7 +63,7 @@ export const SliderContainer: React.FC = () => {
   };
   return (
     <>
-      <SliderContainerStyles>
+      <SliderContainerStyles id="section3">
         <h2> What they've said</h2>
         <Slider {...settings}>
           {sliderData.map((item, index) => {
