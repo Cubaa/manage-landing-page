@@ -100,7 +100,7 @@ export const Navbar: React.FC<INav> = ({ nav, hamburgerMenuHandle }) => {
         </NavButton>
         <HamburgerMenu>
           <img
-            src="../images/icon-hamburger.svg"
+            src="images/icon-hamburger.svg"
             alt="icon-hamburger"
             onClick={hamburgerMenuHandle}
           />
