@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Footer/SocialMediaLogo/icon.css","webpack://src/components/Slider/SliderContainer.css"],"names":[],"mappings":"AAAA,MACE,sCAA+B,CAA/B,8BACF,CCFA,YACE,gBACF","file":"main.581d9f16.chunk.css","sourcesContent":[".icon {\r\n  filter: brightness(0) invert(1);\r\n}\r\n",".slick-list {\r\n  overflow: visible;\r\n}\r\n"]}
