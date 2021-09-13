@@ -76,7 +76,7 @@ export const SocialMediaLogo: React.FC = () => {
     <>
       <SocialMediaLogoWrapper>
         <Logo>
-          <img src="../images/logo.svg" alt="logo" className="icon" />
+          <img src="../images/logo.SVG" alt="logo" className="icon" />
         </Logo>
         <SocialMediaLinks>
           <AiFillFacebook
