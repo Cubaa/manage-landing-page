@@ -33,7 +33,7 @@ export const MobileMenuLogoAndClose: React.FC<IMobileMenu> = ({
           <img src="images/logo.svg" alt="logo" />
         </Logo>
         <CloseIcon onClick={hamburgerMenuHandle}>
-          <img src="../images/icon-close.svg" alt="icon-close" />
+          <img src="images/icon-close.svg" alt="icon-close" />
         </CloseIcon>
       </MobileMenuLogoAndCloseWrapper>
     </>
