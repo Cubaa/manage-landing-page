@@ -77,7 +77,7 @@ export const Navbar: React.FC<INav> = ({ nav, hamburgerMenuHandle }) => {
     <>
       <Nav ref={nav}>
         <NavLogo>
-          <img src="../../../public/images/logo.svg" alt="logo" />
+          <img src="/images/logo.svg" alt="logo" />
         </NavLogo>
         <NavMenu>
           {navMenuLinks.map((link, index: number) => {

@@ -26,7 +26,7 @@ const Illustration = styled.div`
 export const IntroSectionIllustration: React.FC = () => {
   return (
     <Illustration>
-      <img src="../images/illustration-intro.svg" alt="illustration-intro" />
+      <img src="/images/illustration-intro.svg" alt="illustration-intro" />
     </Illustration>
   );
 };
