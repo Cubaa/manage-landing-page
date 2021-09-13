@@ -18,6 +18,9 @@ const SliderContainerStyles = styled.section`
     margin-bottom: 100px;
     color: hsl(233, 12%, 13%);
   }
+  @media (max-width: 835px) {
+    margin-top: 40px;
+  }
 `;
 
 const ButtonWrapper = styled.div`

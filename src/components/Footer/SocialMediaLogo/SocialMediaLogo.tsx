@@ -15,20 +15,32 @@ const SocialMediaLogoWrapper = styled.div`
   align-items: flex-end;
   width: 20%;
   margin-right: 40px;
+
   @media (max-width: 845px) {
-    flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 440px) {
+    flex-direction: column;
   }
 `;
 const Logo = styled.div`
+  display: flex;
   img {
     width: 85%;
     height: auto;
     object-fit: cover;
   }
   @media (max-width: 845px) {
+    margin-right: 6rem;
+    img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 440px) {
+    margin-right: 0rem;
     img {
       width: 100%;
     }
@@ -47,6 +59,16 @@ const SocialMediaLinks = styled.div`
   }
   @media (max-width: 845px) {
     margin-top: 0px;
+    svg {
+      margin: 0 5px;
+    }
+  }
+  @media (max-width: 440px) {
+    margin-top: 10px;
+
+    svg {
+      margin: 10px 5px 0px 5px;
+    }
   }
 `;
 export const SocialMediaLogo: React.FC = () => {

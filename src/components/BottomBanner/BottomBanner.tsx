@@ -24,6 +24,9 @@ const BannerInfo = styled.div`
     max-width: 100%;
     display: flex;
     justify-content: center;
+    h1 {
+      text-align: center;
+    }
   }
 `;
 

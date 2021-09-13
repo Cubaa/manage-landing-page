@@ -9,9 +9,8 @@ const Illustration = styled.div`
   img {
     max-width: 600px;
     min-width: 400px;
-    width: 95%;
-    height: auto;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
   }
   @media (max-width: 880px) {
     width: 100%;

@@ -28,11 +28,11 @@ const SingleElementContent = styled.div`
   p:nth-of-type(1) {
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: clamp(0.5rem, 3vw, 1rem);
+    font-size: clamp(1rem, 3vw, 1rem);
   }
   p:nth-of-type(2) {
     color: hsl(227, 12%, 61%);
-    font-size: clamp(0.5rem, 3vw, 0.9rem);
+    font-size: clamp(0.9rem, 3vw, 0.9rem);
   }
 `;
 

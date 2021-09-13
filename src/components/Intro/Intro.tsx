@@ -20,7 +20,8 @@ const IntroSection = styled.section<IIntro>`
 
   @media (max-width: 880px) {
     flex-direction: column-reverse;
-    padding: 0 2rem;
+    align-items: flex-start;
+    padding: 0 0;
   }
 `;
 

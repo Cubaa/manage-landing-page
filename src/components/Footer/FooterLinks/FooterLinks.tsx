@@ -33,6 +33,10 @@ const LinksWrapper = styled.div`
     }
   }
   @media (max-width: 845px) {
+    a {
+      width: 100%;
+      text-align: center;
+    }
   }
 `;
 
