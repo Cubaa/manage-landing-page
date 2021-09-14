@@ -1,5 +1,7 @@
 Website - landing page (React, TypeScript, Styled Components, RWD)
 
+Design files for mobile & desktop layouts from frontendmentor.io
+
 LIVE: https://cubaa.github.io/manage-landing-page/
 
 # Getting Started with Create React App
