@@ -1,4 +1,5 @@
-In progress... (React, TypeScript, Styled Components, RWD)
+Website - landing page (React, TypeScript, Styled Components, RWD)
+LIVE: https://cubaa.github.io/manage-landing-page/
 
 # Getting Started with Create React App
 
