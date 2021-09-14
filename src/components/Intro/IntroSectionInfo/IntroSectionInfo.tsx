@@ -18,7 +18,7 @@ const Info = styled.div`
   max-width: 700px;
   h1 {
     max-width: 500px;
-    font-size: clamp(1.3rem, 4vw, 3.5rem);
+    font-size: clamp(1.3rem, 4vw, 3rem);
     margin: 0;
     padding: 0;
     color: hsl(233, 12%, 13%);
@@ -27,7 +27,7 @@ const Info = styled.div`
     max-width: 400px;
     color: hsl(227, 12%, 61%);
     margin: 25px 0;
-    font-size: max(1rem, 1.5vw);
+    font-size: max(1.1rem, 1.3vw);
   }
   @media (min-width: 1600px) {
     h1 {

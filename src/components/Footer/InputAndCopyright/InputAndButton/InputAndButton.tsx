@@ -7,7 +7,7 @@ const InputAndButtonWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const InputAndButtonContainer = styled.div`
+const InputAndButtonContainer = styled.form`
   display: flex;
   align-items: stretch;
   input {

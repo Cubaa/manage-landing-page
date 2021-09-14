@@ -38,6 +38,7 @@ const NavMenuLink = styled(Link)`
   font-weight: 700;
   cursor: pointer;
   transition: 0.1s linear;
+  font-size: max(0.8rem, 0.8vw);
   &:hover {
     color: hsl(227, 12%, 61%);
   }
