@@ -11,7 +11,6 @@ const IntroSection = styled.section<IIntro>`
   width: 100%;
   height: auto;
   padding: 1rem 5rem;
-
   display: flex;
   background-position: center;
   background-size: contain;
@@ -27,7 +26,6 @@ const IntroSection = styled.section<IIntro>`
 `;
 
 export const Intro: React.FC<IIntro> = (props) => {
-  console.log(props.navHeight);
   return (
     <>
       <IntroSection navHeight={props.navHeight} id="section1">

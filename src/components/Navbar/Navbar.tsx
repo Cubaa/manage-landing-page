@@ -1,22 +1,22 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import { navMenuLinks } from "../../data/navMenuLinksData";
 import { Button } from "../Button/Button";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Nav = styled.nav`
   width: 100%;
-  /* position: fixed; */
   display: flex;
   align-items: center;
   padding: 2rem 7rem 2rem 5rem;
   justify-content: space-between;
-  /* z-index: 999; */
   background-color: #fff;
+
   @media (max-width: 880px) {
     padding: 2rem 2rem;
     position: fixed;
     z-index: 999;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   }
 `;
 

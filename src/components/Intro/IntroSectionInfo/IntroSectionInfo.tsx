@@ -45,7 +45,6 @@ const Info = styled.div`
     h1 {
       max-width: 90%;
       text-align: center;
-      /* padding: 0 2.2rem; */
     }
     p {
       text-align: center;

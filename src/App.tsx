@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { BackgroundLayout } from "./components/BackgroundLayout/BackgroundLayout";
 import { BottomBanner } from "./components/BottomBanner/BottomBanner";
 import { DifferentAboutManageSection } from "./components/DifferentAboutManageSection/DifferentAboutManageSection";
 import { Footer } from "./components/Footer/Footer";
@@ -26,8 +25,9 @@ function App() {
   );
   useEffect(() => {
     setNavHeight(nav.current.clientHeight);
+
+    return () => {};
   }, [nav]);
-  console.log(navHeight);
 
   useEffect(() => {
     if (widthDimensions > 880) setIsMobileMenu(false);
@@ -35,14 +35,13 @@ function App() {
       setWidthDimensions(window.innerWidth);
     };
 
-    console.log(widthDimensions);
     window.addEventListener("resize", windowWidthHandler);
-  });
-  console.log(isMobileMenu);
+
+    return () => {};
+  }, [widthDimensions]);
 
   const hamburgerMenuHandle = () => {
     setIsMobileMenu(!isMobileMenu);
-    console.log(isMobileMenu);
   };
 
   const closeMobileMenu = () => {
@@ -66,7 +65,6 @@ function App() {
           />
         ) : null}
       </MainContainer>
-      {/* <BackgroundLayout /> */}
     </div>
   );
 }

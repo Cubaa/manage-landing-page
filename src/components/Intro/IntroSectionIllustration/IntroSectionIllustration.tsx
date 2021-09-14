@@ -7,9 +7,6 @@ const Illustration = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    /* max-width: 600px;
-    min-width: 400px; */
-    /* width: 100%; */
     max-width: 100%;
     min-width: 100%;
     width: 100%;

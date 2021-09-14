@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
-import { Icon } from "./Icon/Icon";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
