@@ -24,8 +24,7 @@ function App() {
     window.innerWidth
   );
   useEffect(() => {
-    setNavHeight(nav.current.clientHeight);
-
+    setNavHeight(nav.current.clientHeight + 32);
     return () => {};
   }, [nav]);
 
