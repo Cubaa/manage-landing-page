@@ -8,6 +8,14 @@ import { MobileMenu } from "./components/MobileMenu/MobileMenu";
 import { Navbar } from "./components/Navbar/Navbar";
 import { SliderContainer } from "./components/Slider/SliderContainer";
 import { GlobalStyle } from "./GlobalStyles/GlobalStyles";
+import styled from "styled-components";
+
+const MainContainer = styled.div`
+  margin: 0 auto;
+  @media (min-width: 1921px) {
+    width: 1920px;
+  }
+`;
 
 function App() {
   const nav = useRef<any>();
@@ -44,18 +52,20 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Navbar nav={nav} hamburgerMenuHandle={hamburgerMenuHandle} />
-      <Intro navHeight={navHeight} />
-      <DifferentAboutManageSection />
-      <SliderContainer />
-      <BottomBanner />
-      <Footer />
-      {isMobileMenu ? (
-        <MobileMenu
-          hamburgerMenuHandle={hamburgerMenuHandle}
-          closeMobileMenu={closeMobileMenu}
-        />
-      ) : null}
+      <MainContainer>
+        <Navbar nav={nav} hamburgerMenuHandle={hamburgerMenuHandle} />
+        <Intro navHeight={navHeight} />
+        <DifferentAboutManageSection />
+        <SliderContainer />
+        <BottomBanner />
+        <Footer />
+        {isMobileMenu ? (
+          <MobileMenu
+            hamburgerMenuHandle={hamburgerMenuHandle}
+            closeMobileMenu={closeMobileMenu}
+          />
+        ) : null}
+      </MainContainer>
       {/* <BackgroundLayout /> */}
     </div>
   );

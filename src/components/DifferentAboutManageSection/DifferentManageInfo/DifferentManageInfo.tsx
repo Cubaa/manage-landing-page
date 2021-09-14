@@ -11,6 +11,9 @@ const ManageInfo = styled.div`
     justify-content: center;
     padding: 4rem 0rem 2rem 0rem;
   }
+  @media (min-width: 1280px) {
+    justify-content: center;
+  }
 `;
 
 const Info = styled.div`

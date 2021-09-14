@@ -20,7 +20,16 @@ const BannerInfo = styled.div`
     color: #fff;
     font-size: clamp(2rem, 2.5vw, 3rem);
   }
+
   @media (max-width: 799px) {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    h1 {
+      text-align: center;
+    }
+  }
+  @media (min-width: 1300px) {
     max-width: 100%;
     display: flex;
     justify-content: center;

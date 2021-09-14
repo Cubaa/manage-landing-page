@@ -42,6 +42,24 @@ export const SliderContainer: React.FC = () => {
     // autoplay: true,
     responsive: [
       {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 840,
         settings: {
           slidesToShow: 2,

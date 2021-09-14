@@ -5,8 +5,9 @@ import { Button } from "../../Button/Button";
 const IntroInfo = styled.div`
   width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+
   @media (max-width: 880px) {
     width: 100%;
     justify-content: center;
@@ -27,6 +28,14 @@ const Info = styled.div`
     color: hsl(227, 12%, 61%);
     margin: 25px 0;
     font-size: max(1rem, 1.5vw);
+  }
+  @media (min-width: 1600px) {
+    h1 {
+      max-width: 100%;
+    }
+    p {
+      max-width: 90%;
+    }
   }
   @media (max-width: 880px) {
     max-width: 100%;
